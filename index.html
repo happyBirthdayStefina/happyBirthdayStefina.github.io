@@ -1,9 +1,48 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
-<body>
+  <link rel="stylesheet" href="index.css" />
+  <body>
+    <audio loop autoplay>
+      <source src="audioplay.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="happy">
+      <div class="balloon balloon1 balloon-anim1"></div>
+      <div class="balloon balloon2 balloon-anim6"></div>
+      <div class="balloon balloon3 balloon-anim3"></div>
+      <div class="balloon balloon4 balloon-anim4"></div>
+      <div class="balloon balloon5 balloon-anim5"></div>
+    </div>
+    <div class="birthday">
+      <div class="balloon balloon3 balloon-anim6"></div>
+      <div class="balloon balloon1 balloon-anim2"></div>
+      <div class="balloon balloon4 balloon-anim1"></div>
+      <div class="balloon balloon2 balloon-anim6"></div>
+      <div class="balloon balloon1 balloon-anim4"></div>
+      <div class="balloon balloon3 balloon-anim5"></div>
+      <div class="balloon balloon2 balloon-anim1"></div>
+      <div class="balloon balloon4 balloon-anim6"></div>
+    </div>
+    <div class="name">Stefina... aka Nemo</div>
+    <div class="displayContainer">
+      <div id="image-container">
+        <img id="random-image" src="" alt="Random Image" />
+        <div class="overlay" id="image-text"></div>
+      </div>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+      <div class="item button-parrot" style="--bg-color: #2c3e50">
+        <button onclick="loadRandomImage()">
+          Show random memory of us
+          <div class="parrot"></div>
+          <div class="parrot"></div>
+          <div class="parrot"></div>
+          <div class="parrot"></div>
+          <div class="parrot"></div>
+          <div class="parrot"></div>
+        </button>
+      </div>
+    </div>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
